@@ -1,18 +1,39 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<div>
+  
+  <!-- Search-bar -->
+  <search />
+  
+  <section class="section">
+    <div class="container">  
+
+      <!-- User Card -->
+      <userCard />
+
+    </div>
+  </section>
+</div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import userCard from "../components/user-card";
+import search from "../components/search";
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    userCard,
+    search
   }
 }
 </script>
+<style lang="scss" scope>
+
+.section{
+  @include mobile{
+    padding: 20px;
+  }
+}
+
+  
+</style>

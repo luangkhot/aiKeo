@@ -31,6 +31,7 @@
                         <p>Agriculture</p>
                     </div>
                 </div>
+                <button class="button reset-pw" @click="$router.push({name:'resetpassword'})">Reset Password</button>
             </div>
             <div class="column">
                 <div class="box">
@@ -163,6 +164,18 @@
 
   }
 }
+.reset-pw{
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid $border;
+    background-color: $color-4;
+    color: #fff;
+    &:focus{
+        box-shadow: none;
+        box-shadow: unset;
+    }
+}
+
 .box{
     box-shadow: none;
     box-shadow: unset;
